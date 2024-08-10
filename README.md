@@ -1,6 +1,6 @@
 # My Portfolio Website 🌐
 
-Welcome to my portfolio website! This site showcases my projects, experience, and skills as a software engineer.
+Welcome to my portfolio website! This site showcases my projects, experience, and skills as an aspiring software engineer.
 
 ## Features ✨
 
