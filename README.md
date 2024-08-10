@@ -1,6 +1,6 @@
 # My Portfolio Website 🌐
 
-Welcome to my portfolio website! This site showcases my projects, experience, and skills as an aspiring software engineer.
+Welcome to my portfolio website! This site showcases my projects, experience, and skills as an aspiring Software Engineer.
 
 ## Features ✨
 
@@ -10,7 +10,7 @@ Welcome to my portfolio website! This site showcases my projects, experience, an
 
 💻 **Projects**: A showcase of the projects I've worked on, with descriptions and links to the code.
 
-📬 **Contact**: Get in touch with me via email or LinkedIn.
+📬 **Contact**: Get in touch with me via LinkedIn.
 
 ## Technologies Used 🛠️
 
@@ -19,7 +19,7 @@ Welcome to my portfolio website! This site showcases my projects, experience, an
 
 ## Contact 📞
 
-Feel free to reach out to me through my [LinkedIn](https://www.linkedin.com/in/srujana-e) profile.
+Feel free to reach out to me through [LinkedIn](https://www.linkedin.com/in/srujana-e).
 
 ---
 
