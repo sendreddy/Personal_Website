@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- linking HTML to external CSS files for styling the web page -->
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- creating a nav bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Srujana Endreddy</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav"> 
+        <div class="logo">Srujana Endreddy</div>
+        <div class="hamburger-menu">
+            <!-- toggleMenu() is the only JS function here -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <!-- the lines of the hamburger menu -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links"> 
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Srujana Endreddy profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm Srujana!</p>
+            <p class="section__text__p2">Software Engineer👩‍💻 </p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/SRUJANA_ENDREDDY_RESUME.pdf')"
+                >
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/srujana-e/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/sendreddy'"
+                />
+            </div>
+        </div> 
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic.jpg" 
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2 SWE Internships at UPS</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hey! My name is Srujana Endreddy and I'm a senior at TCNJ majoring in Computer Science. 
+                        I have a deep passion for programming and technology, with the goal of becoming a Software Engineer.
+                    </p>
+                    <br /> 
+                    <p>
+                        Throughout my academic journey, I've been actively engaged in various projects and have gained hands-on experience with different programming languages and tools.
+                        On this website, you'll find information about my projects, experiences, and the skills I've acquired along the way.
+                        Whether it's developing innovative applications, solving complex problems, or exploring the latest trends in technology, I'm always eager to learn and grow.
+                        Thank you for visiting my personal website, and I look forward to sharing my journey with you.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'" 
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend & Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Ruby</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>C++</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML/CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>ReactJS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Angular</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Tools and Technologies</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Advanced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Postman</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Figma</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>JFrog Frogbot</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Azure DevOps</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Power BI</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>JIRA</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Terraform</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>ReactJS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='#projects'" 
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Take a look at</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <img src="./assets/project1.png" alt="Project 1 image" class="project-img" />
+                <h2>Project 1</h2>
+                <p>This project provides an analysis of reviewer bias based on star ratings.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/sendreddy/Amazon-Web-Scrapping'">GitHub</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/project2.png" alt="Project 2 image" class="project-img" />
+                <h2>Project 2</h2>
+                <p>This project automates event scheduling and space allocation, with features for managing capacities and user preferences.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/sendreddy/Scheduler'">GitHub</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/project3.png" alt="Project 3 image" class="project-img" />
+                <h2>Project 3</h2>
+                <p>This project provides an interactive interface that allows users to execute commands and retrieve detailed information on a vehicle’s cost, emission data, make, model, and more.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/sendreddy/Sustainable-Jersey'">GitHub</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/project4.png" alt="Project 4 image" class="project-img" />
+                <h2>Project 4</h2>
+                <p>This project features a chat application with video capabilities using WebRTC, offering dynamic chat interface updates and seamless room creation or joining.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/sendreddy/Online-Meeting-Software'">GitHub</button>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'" 
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:endreds2@tcnj.edu">endreds2@tcnj.edu</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/srujana-e">LinkedIn</a></p>
+            </div>
+
+    </section> 
+    <footer>
+        <nav>
+            <div class="nav-links-container"> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    <script src="script.js"></script>   
+</body>
+</html>
